@@ -1,9 +1,10 @@
 const accessKey="ked-_LPadm9XKjGuuUVx7W1Nsk9BcEk4YXdg4SuE5fY"
 
 const formel = document.querySelector("form");
-const inputEl = document.getElementById("search-input");
+let inputEl = document.getElementById("search-input");
 const searchResults = document.querySelector(".search-results");
 const showMore = document.getElementById("show-more-button");
+
 
 let inputData = "";
 let page=1;
@@ -41,6 +42,55 @@ if(page>1){
     showMore.style.display = "block";
 }
 }
+document.getElementById("wallpaper").addEventListener("click",()=>{
+    inputEl.value=document.getElementById("wallpaper").innerHTML;
+    searchImages()
+})
+
+document.getElementById("tree").addEventListener("click",()=>{
+    inputEl.value=document.getElementById("tree").innerHTML;
+    searchImages()
+})
+
+document.getElementById("nature").addEventListener("click",()=>{
+    inputEl.value=document.getElementById("nature").innerHTML;
+    searchImages()
+})
+
+document.getElementById("waterfall").addEventListener("click",()=>{
+    inputEl.value=document.getElementById("waterfall").innerHTML;
+    searchImages()
+})
+
+document.getElementById("sunrise").addEventListener("click",()=>{
+    inputEl.value=document.getElementById("sunrise").innerHTML;
+    searchImages()
+})
+
+document.getElementById("landscapes").addEventListener("click",()=>{
+    inputEl.value=document.getElementById("landscapes").innerHTML;
+    searchImages()
+})
+
+document.getElementById("animals").addEventListener("click",()=>{
+    inputEl.value=document.getElementById("animals").innerHTML;
+    searchImages()
+})
+
+document.getElementById("cities").addEventListener("click",()=>{
+    inputEl.value=document.getElementById("cities").innerHTML;
+    searchImages()
+})
+
+document.getElementById("villages").addEventListener("click",()=>{
+    inputEl.value=document.getElementById("villages").innerHTML;
+    searchImages()
+})
+
+document.getElementById("rainbow").addEventListener("click",()=>{
+    inputEl.value=document.getElementById("rainbow").innerHTML;
+    searchImages()
+})
 
 formel.addEventListener("submit",(event)=>{
     event.preventDefault();
